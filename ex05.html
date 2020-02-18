@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+    "><br><br>
+
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value==='night') {
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value='day'
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value='night'
+        }
+    ">
+
+	<h2 style="color:powderblue; background-color: salmon;">JavaScript</h2>
+    <p>
+        <span id="first" class="js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is an interpreted programming language that conforms to the ECMAScript specification. <span class="js">JavaScript</span> is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+    </p>
+</body>
+</html>
