@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSON TEST - KeyValue</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var jsontest = {};
+
+        function saveOnload(){
+            var jsonKey = $("#testKey").val();
+            var jsonValue = $("#testValue").val();
+            
+            jsontest[jsonKey] = jsonValue;
+            $("#testResult").html(JSON.stringify(jsontest));
+        }
+
+        function selectDelete(){
+            delete jsontest[$("#testKey").val()];
+            $("#testResult").html(JSON.stringify(jsontest));
+        }
+    </script>
+</head>
+<body>
+    Key : <input type="text" id="testKey"><br>
+    Value : <input type="text" id="testValue"><br>
+
+    <input type="button" id="testSave" value="save" onclick="saveOnload()">
+    <input type="button" id="testDelete" value="delete" onclick="selectDelete()"><br><br>
+
+    result
+    <div id="testResult"></div>
+</body>
+</html>

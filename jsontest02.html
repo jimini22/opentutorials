@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSON TEST - Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        table {
+            width: 400px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:lavender;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function addRowInfoTable(){
+            
+            var nameAge = [{name:"jimini", age:22},
+                            {name:"kiki", age:22},
+                            {name:"soso", age:33}] 
+            for(i=0; i<nameAge.length; i++){
+                console.log(nameAge[i].name);
+            
+                 $("#infoTable").append("<tr><td>"+nameAge[i].name+"</td><td>"+nameAge[i].age+"</td></tr>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <table id="infoTable">
+        <tr>
+            <th>이름</th><th>나이</th>
+        </tr>
+    </table>
+    <input type="button" value="ROW추가" onclick="addRowInfoTable()">
+    <script>
+        
+        
+
+    </script>
+</body>
+</html>
