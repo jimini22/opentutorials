@@ -1,0 +1,7 @@
+https://www.w3schools.com/jquery/jquery_dom_get.asp
+https://www.w3schools.com/jquery/exercise_jq.asp?filename=exercise_jq_css_classes1
+https://developer.mozilla.org/ko/
+
+
+1. jQuery
+2. JSTL
